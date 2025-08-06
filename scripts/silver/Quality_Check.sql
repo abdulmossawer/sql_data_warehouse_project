@@ -13,9 +13,9 @@ HAVING COUNT(*) > 1 OR sls_cust_id IS NULL
 -- Expectation: No Result
 
 SELECT
-	sls_prd_key
-FROM bronze.crm_sales_details
-WHERE sls_prd_key ! = TRIM(sls_prd_key) 
+	cid
+FROM bronze.erp_cust_az12
+WHERE cid ! = TRIM(cid) 
 
 -- Check for Negative Values OR NULL 
 -- Expectation: No Result
@@ -27,8 +27,8 @@ WHERE prd_cost < 0 OR prd_cost IS NULL
 
 -- Data Standardization & Consistency
 
-SELECT DISTINCT prd_line
-FROM silver.crm_prd_info
+SELECT DISTINCT cntry
+FROM silver.erp_loc_a101
 
 
 
@@ -65,4 +65,10 @@ OR sls_sales <= 0 OR sls_quantity <= 0 OR sls_price <= 0
 ORDER BY sls_sales, sls_quantity, sls_price
 
 
-SELECT * FROM silver.crm_sales_details
+ -- Identify Out-of-Range Dates
+
+ SELECT * 
+ FROM silver.erp_cust_az12
+ WHERE bdate < '1924-01-01' OR bdate > GETDATE()
+
+ SELECT * FROM silver.erp_loc_a101
