@@ -45,7 +45,7 @@ This project covers:
 - **CSV Files** – raw ERP and CRM datasets
 - **GitHub** – project versioning and documentation
 - **Draw.io** – architecture and data flow diagrams
-- **Notion** – task tracking and project notes (optional)
+- **Notion** – [Project Tasks & Planning](https://humdrum-patient-f09.notion.site/Data-Warehouse-Project-2409831d4f5280fdbb36f1b76824f28c)
 
 ---
 
@@ -129,7 +129,7 @@ sql_data_warehouse_project/
 
 ## ☕ About Me
 
-Hi there! I'm **Abdul Mossawer**, a Data Engineering enthusiast currently learning and building portfolio projects around SQL, data warehousing, and analytics. This project is part of my **#100DaysOfDataAnalytics** journey to upskill and share my learning experience publicly.
+Hi there! I'm **Abdul Mossawer**, a Data Analyst enthusiast currently learning and building portfolio projects around SQL, data warehousing, and analytics. This project is part of my **#100DaysOfDataAnalytics** journey to upskill and share my learning experience publicly.
 
 Let’s connect!  
 🔗 [LinkedIn](https://linkedin.com/in/abdulmossawer) | [GitHub](https://github.com/abdulmossawer) | [X](https://x.com/AMossawerdev)
